@@ -39,7 +39,8 @@ public class signupnow extends HttpServlet {
 			//pw.println(ps);
 			try {
 				st.executeUpdate(ps);
-				pw.println("registered sucess fully");
+				
+				response.sendRedirect("messege_register.html");
 			    }
 			catch(Exception e)
 			{

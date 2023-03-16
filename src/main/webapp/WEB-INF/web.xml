@@ -79,4 +79,44 @@
     <servlet-name>about</servlet-name>
     <url-pattern>/about</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>b2</display-name>
+    <servlet-name>b2</servlet-name>
+    <servlet-class>b2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>b2</servlet-name>
+    <url-pattern>/b2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>receipe</display-name>
+    <servlet-name>receipe</servlet-name>
+    <servlet-class>receipe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>receipe</servlet-name>
+    <url-pattern>/receipe</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>home</display-name>
+    <servlet-name>home</servlet-name>
+    <servlet-class>home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FailLogin</display-name>
+    <servlet-name>FailLogin</servlet-name>
+    <servlet-class>FailLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FailLogin</servlet-name>
+    <url-pattern>/FailLogin</url-pattern>
+  </servlet-mapping>
 </web-app>

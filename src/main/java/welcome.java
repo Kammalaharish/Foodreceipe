@@ -50,19 +50,26 @@ public class welcome extends HttpServlet {
 					}*/
 					if(resultSet.next()) {
 					pass=resultSet.getString("password").trim();
-					}
 					pw.println("user name: " + m+"\n original password:"+pass+"\nentered :"+pwd);
-					
 					if(pass.equals(pwd))
 					{
+					//Thread.sleep(1);
 					pw.println("welcome:"+m);
-					//response.sendRedirect("order.html");
+					response.sendRedirect("baseapp.html");
 					}
 					else
-					{response.sendRedirect("login.html");
+					{response.sendRedirect("messege_fail_login.html");
 						//pw.println("login fail");
 						
 					}
+					}
+					else {
+						
+						response.sendRedirect("usernotfound.html");
+					}
+					
+					
+					
 					resultSet.close();
 					statement.close();
 					connection.close();
